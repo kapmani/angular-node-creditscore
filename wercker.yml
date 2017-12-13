@@ -69,7 +69,7 @@ deploy-to-oke:
         name: "Visualise Ingress config"
         code: cat ingress.yml
 
-- kubectl:
+    - kubectl:
         name: create Ingress configuration
         server: $KUBERNETES_MASTER
         token: $KUBERNETES_TOKEN
